@@ -9,14 +9,15 @@ import numpy as np
 '''
 def bisection(f, a, b, eps):
     if f(a) * f(b) > 0:
-         return "Решений нет"
-         
+        return "Решения нет, либо оно не единственно"      
     while (b - a) / 2 > eps:
-        c = (a + b) / 2
-        if f(c) == 0:
+        c = (a + b) / 2 #находим середину отрезка
+        if f(c) == 0: #если выполняется условие, решение найдено
             return c
+        #если f(a)*f(c)<0 то корень расположен на отрезке [a, с]
         elif f(a) * f(c) < 0:
             b = c
+        #иначе, на отрезке [с, b]
         else:
             a = c
     return c
