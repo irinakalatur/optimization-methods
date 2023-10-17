@@ -24,7 +24,7 @@ def newton(f, df, x0, max_iter, eps):
 
 def function(x):
     #задаем функцию
-    return x**3 + 4*x - 3
+    return x**2 + 4*x - 3
 
 
 def d_function(x):
@@ -44,3 +44,6 @@ y = x**3 + 4*x - 3
 ax.grid()
 ax.plot(x, y, marker ='o', markersize = 3, markerfacecolor ='red')
 plt.show()
+
+a = eval(input())
+print(a,type(a))
