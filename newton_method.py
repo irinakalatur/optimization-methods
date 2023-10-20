@@ -44,6 +44,3 @@ y = x**3 + 4*x - 3
 ax.grid()
 ax.plot(x, y, marker ='o', markersize = 3, markerfacecolor ='red')
 plt.show()
-
-a = eval(input())
-print(a,type(a))
