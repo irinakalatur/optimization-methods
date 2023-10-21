@@ -38,3 +38,7 @@ y = eval(f_x)
 ax.grid()
 ax.plot(x, y, marker ='o', markersize = 3, markerfacecolor ='red')
 fig
+
+#class Equation():
+   # def __init__(self):
+      #  pass
